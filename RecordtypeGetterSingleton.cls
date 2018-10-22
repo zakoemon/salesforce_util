@@ -20,7 +20,8 @@ public class RecordtypeGetterSingleton
             this.recordTypeMap.put((rt.sObjectType + ':' + rt.DeveloperName).toLowerCase(), rt);
         }
     }
-
+    
+    //always use this method to get the instance.
     public static RecordtypeGetterSingleton getInstance()
     {
         if(singleton == null) singleton = new RecordtypeGetterSingleton();
